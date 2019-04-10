@@ -20,8 +20,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'jw&(wz)ecv1df8_u7(%5x$$0v8k*8tlojlpv$xe)*p54g*-5@-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -144,12 +142,12 @@ REST_FRAMEWORK = {
 client = MongoClient()
 db = client.get_database('datafornix')
 
-DEFAULT_FROM_EMAIL = 'yashmahes@gmail.com'
+DEFAULT_FROM_EMAIL = ''
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'yashmahes'
-EMAIL_HOST_PASSWORD = '1!Mountain'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 SWAGGER_SETTINGS = {
